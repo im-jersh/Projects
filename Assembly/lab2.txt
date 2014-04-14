@@ -1,0 +1,67 @@
+include dos.mac		; include macro file
+
+.model small
+.stack 100h
+.data
+
+menu	db	0Ah, 0Dh, "Please select an option from the menu below:"
+	db	0Ah, 0Dh, "a) Enter a character"
+	db	0Ah, 0Dh, "b) Display a character"
+	db	0Ah, 0Dh, "c) Enter a string"
+	db	0Ah, 0Dh, "d) Display a string"
+	db	0Ah, 0Dh, "e) Exit the program:" , 0Ah, 0Dh, "$"
+
+invalid	db	0Ah, 0Dh, "Invalid input", "$"
+cinput	db	?
+
+
+.code
+main proc
+		mov ax, @data		; set data segment
+		mov ds, ax		
+		
+
+MENUPRINT:	@print_str menu		; print menu with macro
+		@read_char		; get selection from user
+
+		cmp al, 'A'
+		jb BADCHAR
+		je GET_A
+		cmp al, 'E'
+		ja LOWER
+		je EXIT
+		cmp al, 'B'
+		je GET_B
+		cmp al, 'C'
+		je GET_C
+		@print_str cinput
+		
+
+LOWER:		cmp al, 'a'
+		jb BADCHAR
+		je GET_A
+		cmp al, 'e'
+		ja BADCHAR
+		je EXIT
+		cmp al, 'b'
+		je GET_B
+		cmp al, 'c'
+		je GET_C
+		@print_str cinput
+
+BADCHAR:	@print_str invalid
+
+GET_A:		@read_char
+		jmp MENUPRINT
+
+GET_B:		@print_char dl
+		jmp MENUPRINT
+
+GET_C:		@read_str cinput
+		jmp MENUPRINT
+
+EXIT:		mov ax, 4c00h		; return to DOS
+		int 21h
+
+main endp
+end main

@@ -1,0 +1,525 @@
+Enter your name: Connor Knabe
+The year is 2077
+Starting Console
+Hacker Connor Knabe with health of 100 with 20000 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 1
+ You need to get job
+
+Hacker Connor Knabe with health of 100 with 20000 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 0
+Option invalid, pick again -2
+Option invalid, pick again 5
+Option invalid, pick again 3
+
+ Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 1
+
+ [Contact Otto Arnold]  	Corporation: Weyland industries
+1)Job: 128.123.456.001 worth 23664
+2)Job: 100.789.456.123 worth 34130
+3)Job: 314.678.345.101 worth 34188
+4)Job: 101.789.456.223 worth 22337
+5)Job: 314.678.345.101 worth 24085
+6)Job: 128.123.456.001 worth 34613
+7)Job: 100.789.456.123 worth 27799
+8)Job: 314.678.345.101 worth 29071
+9)Job: 100.786.457.143 worth 29126
+10)Job: 100.789.456.123 worth 23330
+Selection: 3
+
+Hacker Connor Knabe with health of 100 with 20000 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 5
+Option invalid, pick again -1
+Option invalid, pick again 0
+Option invalid, pick again 3
+
+ Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 1
+
+ [Contact Otto Arnold]  	Corporation: Weyland industries
+1)Job: 128.123.456.001 worth 23664
+2)Job: 100.789.456.123 worth 34130
+3)Job: 101.789.456.223 worth 22337
+4)Job: 314.678.345.101 worth 24085
+5)Job: 128.123.456.001 worth 34613
+6)Job: 100.789.456.123 worth 27799
+7)Job: 314.678.345.101 worth 29071
+8)Job: 100.786.457.143 worth 29126
+9)Job: 100.789.456.123 worth 23330
+Selection: 10
+Invalid choice, try again: -1
+Invalid choice, try again: 0
+Invalid choice, try again: 9
+
+Hacker Connor Knabe with health of 100 with 20000 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 1
+ 
+Jobs to do
+1)Job: 314.678.345.101 worth 34188
+2)Job: 100.789.456.123 worth 23330
+Selection: -1
+Option invalid, pick again 0
+Option invalid, pick again 10
+Option invalid, pick again 3
+Option invalid, pick again 1
+
+1) BASHER tool named Crusher with 1 strength and a cost of 0
+2) DECRYPTOR tool named LockPiker with 1 strength and a cost of 0
+Pick your ice breaker: -1
+Not a valid tool, enter your choice again: 0
+Not a valid tool, enter your choice again: 11
+Not a valid tool, enter your choice again: 2
+ 
+ICE ENCOUNTERED, ATTEMPTING BREAK IN.....
+SERVER INFO: UNENCRYPTED server with address of 314.678.345.101 with 2 strength
+RUN FAILURE
+ 
+Hacker Connor Knabe with health of 70 with 20000 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 2
+ Hacker Connor Knabe with health of 70 with 20000 yen 
+ 
+Welcome to the Black Mart
+PN:1 [BASHER tool named Crusher with 2 strength and a cost of 1000]
+PN:2 [DECRYPTOR tool named LockPiker with 2 strength and a cost of 1000]
+PN:3 [DECRYPTOR tool named JohnTheRipper with 3 strength and a cost of 1500]
+PN:4 [DECRYPTOR tool named Crypsis with 10 strength and a cost of 6000]
+PN:5 [DECRYPTOR tool named Yellowpipe with 15 strength and a cost of 12000]
+PN:6 [BASHER tool named 007 with 10 strength and a cost of 5000]
+PN:7 [DECRYPTOR tool named Reaper with 3 strength and a cost of 3000]
+PN:8 [BASHER tool named Exploit1337 with 6 strength and a cost of 8000]
+To cancel purchase enter -1
+Selection: 0
+Option invalid, pick again -1
+No tool bought
+
+Hacker Connor Knabe with health of 70 with 20000 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 2
+ Hacker Connor Knabe with health of 70 with 20000 yen 
+ 
+Welcome to the Black Mart
+PN:1 [BASHER tool named Crusher with 2 strength and a cost of 1000]
+PN:2 [DECRYPTOR tool named LockPiker with 2 strength and a cost of 1000]
+PN:3 [DECRYPTOR tool named JohnTheRipper with 3 strength and a cost of 1500]
+PN:4 [DECRYPTOR tool named Crypsis with 10 strength and a cost of 6000]
+PN:5 [DECRYPTOR tool named Yellowpipe with 15 strength and a cost of 12000]
+PN:6 [BASHER tool named 007 with 10 strength and a cost of 5000]
+PN:7 [DECRYPTOR tool named Reaper with 3 strength and a cost of 3000]
+PN:8 [BASHER tool named Exploit1337 with 6 strength and a cost of 8000]
+To cancel purchase enter -1
+Selection: 10
+Option invalid, pick again 6
+
+Hacker Connor Knabe with health of 70 with 15000 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 1
+ 
+Jobs to do
+1)Job: 314.678.345.101 worth 34188
+2)Job: 100.789.456.123 worth 23330
+Selection: 0
+Option invalid, pick again 1
+
+1) BASHER tool named Crusher with 1 strength and a cost of 0
+2) DECRYPTOR tool named LockPiker with 1 strength and a cost of 0
+3) BASHER tool named 007 with 10 strength and a cost of 5000
+Pick your ice breaker: -1
+Not a valid tool, enter your choice again: 3
+ 
+ICE ENCOUNTERED, ATTEMPTING BREAK IN.....
+SERVER INFO: UNENCRYPTED server with address of 314.678.345.101 with 5 strength
+RUN SUCCESSFUL
+ 
+Hacker Connor Knabe with health of 70 with 49188 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 1
+ 
+Jobs to do
+1)Job: 100.789.456.123 worth 23330
+Selection: 1
+
+1) BASHER tool named Crusher with 1 strength and a cost of 0
+2) DECRYPTOR tool named LockPiker with 1 strength and a cost of 0
+3) BASHER tool named 007 with 10 strength and a cost of 5000
+Pick your ice breaker: 2
+ 
+ICE ENCOUNTERED, ATTEMPTING BREAK IN.....
+SERVER INFO: UNENCRYPTED server with address of 100.789.456.123 with 2 strength
+RUN FAILURE
+ 
+Hacker Connor Knabe with health of 40 with 49188 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 3
+
+ Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 1
+
+ [Contact Otto Arnold]  	Corporation: Weyland industries
+1)Job: 128.123.456.001 worth 23664
+2)Job: 100.789.456.123 worth 34130
+3)Job: 101.789.456.223 worth 22337
+4)Job: 314.678.345.101 worth 24085
+5)Job: 128.123.456.001 worth 34613
+6)Job: 100.789.456.123 worth 27799
+7)Job: 314.678.345.101 worth 29071
+8)Job: 100.786.457.143 worth 29126
+Selection: 1
+
+Hacker Connor Knabe with health of 40 with 49188 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 3
+
+ Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 1
+
+ [Contact Otto Arnold]  	Corporation: Weyland industries
+1)Job: 100.789.456.123 worth 34130
+2)Job: 101.789.456.223 worth 22337
+3)Job: 314.678.345.101 worth 24085
+4)Job: 128.123.456.001 worth 34613
+5)Job: 100.789.456.123 worth 27799
+6)Job: 314.678.345.101 worth 29071
+7)Job: 100.786.457.143 worth 29126
+Selection: 1
+
+Hacker Connor Knabe with health of 40 with 49188 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 3
+
+ Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 1
+
+ [Contact Otto Arnold]  	Corporation: Weyland industries
+1)Job: 101.789.456.223 worth 22337
+2)Job: 314.678.345.101 worth 24085
+3)Job: 128.123.456.001 worth 34613
+4)Job: 100.789.456.123 worth 27799
+5)Job: 314.678.345.101 worth 29071
+6)Job: 100.786.457.143 worth 29126
+Selection: 1
+
+Hacker Connor Knabe with health of 40 with 49188 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 3
+
+ Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 1
+
+ [Contact Otto Arnold]  	Corporation: Weyland industries
+1)Job: 314.678.345.101 worth 24085
+2)Job: 128.123.456.001 worth 34613
+3)Job: 100.789.456.123 worth 27799
+4)Job: 314.678.345.101 worth 29071
+5)Job: 100.786.457.143 worth 29126
+Selection: 1
+
+Hacker Connor Knabe with health of 40 with 49188 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 3
+
+ Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 2
+
+ [Contact Akemi Soul]  	Corporation: Jinteki
+1)Job: 100.799.456.223 worth 20551
+2)Job: 999.666.666.777 worth 31734
+3)Job: 314.678.345.101 worth 29343
+4)Job: 100.799.456.223 worth 27186
+5)Job: 567.123.678.114 worth 34725
+6)Job: 100.786.457.143 worth 31991
+7)Job: 567.123.678.114 worth 25507
+8)Job: 128.123.456.001 worth 24556
+9)Job: 100.786.457.143 worth 30743
+10)Job: 100.789.456.123 worth 28142
+Selection: 10
+
+Hacker Connor Knabe with health of 40 with 49188 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 3
+
+ Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 6
+
+ [Contact Adolf Alberg]  	Corporation: Ultralytics
+1)Job: 101.789.456.223 worth 24757
+2)Job: 314.678.345.101 worth 30310
+3)Job: 100.789.456.123 worth 21705
+4)Job: 314.678.345.101 worth 27346
+5)Job: 128.123.456.001 worth 33968
+6)Job: 100.786.457.143 worth 27808
+7)Job: 999.666.666.777 worth 29917
+8)Job: 101.789.456.223 worth 33996
+9)Job: 101.789.456.223 worth 32432
+10)Job: 100.786.457.143 worth 31478
+Selection: 5
+
+Hacker Connor Knabe with health of 40 with 49188 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 3
+
+ Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 9
+Invalid choice, try again: 8
+
+ [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+1)Job: 100.799.456.223 worth 25066
+2)Job: 100.799.456.223 worth 23192
+3)Job: 100.799.456.223 worth 34660
+4)Job: 999.666.666.777 worth 29144
+5)Job: 101.789.456.223 worth 20100
+6)Job: 567.123.678.114 worth 26648
+7)Job: 123.456.789.100 worth 26896
+8)Job: 123.456.789.100 worth 30734
+9)Job: 101.789.456.223 worth 23943
+10)Job: 567.123.678.114 worth 24479
+Selection: -10
+
+Invalid choice, try again: 10
+Hacker Connor Knabe with health of 40 with 49188 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 3
+
+ Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 8
+
+ [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+1)Job: 100.799.456.223 worth 25066
+2)Job: 100.799.456.223 worth 23192
+3)Job: 100.799.456.223 worth 34660
+4)Job: 999.666.666.777 worth 29144
+5)Job: 101.789.456.223 worth 20100
+6)Job: 567.123.678.114 worth 26648
+7)Job: 123.456.789.100 worth 26896
+8)Job: 123.456.789.100 worth 30734
+9)Job: 101.789.456.223 worth 23943
+Selection: 9
+
+Hacker Connor Knabe with health of 40 with 49188 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 3
+
+ Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 2
+
+ [Contact Akemi Soul]  	Corporation: Jinteki
+1)Job: 100.799.456.223 worth 20551
+2)Job: 999.666.666.777 worth 31734
+3)Job: 314.678.345.101 worth 29343
+4)Job: 100.799.456.223 worth 27186
+5)Job: 567.123.678.114 worth 34725
+6)Job: 100.786.457.143 worth 31991
+7)Job: 567.123.678.114 worth 25507
+8)Job: 128.123.456.001 worth 24556
+9)Job: 100.786.457.143 worth 30743
+Selection: 4
+
+Hacker Connor Knabe with health of 40 with 49188 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 1
+ 
+Jobs to do
+1)Job: 100.789.456.123 worth 23330
+2)Job: 128.123.456.001 worth 23664
+3)Job: 100.789.456.123 worth 34130
+4)Job: 101.789.456.223 worth 22337
+5)Job: 314.678.345.101 worth 24085
+6)Job: 100.789.456.123 worth 28142
+7)Job: 128.123.456.001 worth 33968
+8)Job: 567.123.678.114 worth 24479
+9)Job: 101.789.456.223 worth 23943
+10)Job: 100.799.456.223 worth 27186
+Selection: 1
+
+1) BASHER tool named Crusher with 1 strength and a cost of 0
+2) DECRYPTOR tool named LockPiker with 1 strength and a cost of 0
+3) BASHER tool named 007 with 10 strength and a cost of 5000
+Pick your ice breaker: 3
+ 
+ICE ENCOUNTERED, ATTEMPTING BREAK IN.....
+SERVER INFO: UNENCRYPTED server with address of 100.789.456.123 with 5 strength
+RUN SUCCESSFUL
+ 
+Hacker Connor Knabe with health of 40 with 72518 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 1
+ 
+Jobs to do
+1)Job: 128.123.456.001 worth 23664
+2)Job: 100.789.456.123 worth 34130
+3)Job: 101.789.456.223 worth 22337
+4)Job: 314.678.345.101 worth 24085
+5)Job: 100.789.456.123 worth 28142
+6)Job: 128.123.456.001 worth 33968
+7)Job: 567.123.678.114 worth 24479
+8)Job: 101.789.456.223 worth 23943
+9)Job: 100.799.456.223 worth 27186
+Selection: 1
+
+1) BASHER tool named Crusher with 1 strength and a cost of 0
+2) DECRYPTOR tool named LockPiker with 1 strength and a cost of 0
+3) BASHER tool named 007 with 10 strength and a cost of 5000
+Pick your ice breaker: 1
+ 
+ICE ENCOUNTERED, ATTEMPTING BREAK IN.....
+SERVER INFO: ENCRYPTED server with address of 128.123.456.001 with 1 strength
+RUN FAILURE
+ 
+Hacker Connor Knabe with health of 10 with 72518 yen 
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 4
+
+Logging Off!
+

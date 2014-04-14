@@ -1,0 +1,8 @@
+Corporation,Weyland Industries,Otto Arnold
+Corporation,Jinteki,Akemi Soul
+Corporation,Haas-Bioroid,Arthur James
+NonProfit,United Cyber Front,Abbi Jones
+NonProfit,Electronic Frontier Foundation,Marcus O'Brien
+Corporation,Ultralytics,Adolf Alberg
+Corporation,Gurron,Dario Maximus
+Corporation,Exxon Mobile, Gina Varennikov

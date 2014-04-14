@@ -1,0 +1,246 @@
+
+include dos.mac
+
+;**********************************************************
+STACK_SEG SEGMENT STACK
+	DB 100h DUP(?)
+STACK_SEG ENDS
+;**********************************************************
+DATA_SEG SEGMENT 'DATA'  
+    
+
+
+	HANDLE		DW	?
+	FILE		DB	"text.txt", 0	; append 0 to file name as int21 3dh requires this
+	OPENERR 	DB	"An error has occurred (opening)!", "$"
+	BUF		    DD  ?            ; buffer for read interrupt
+	READERROR	DB	"An error has occurred (reading)!", "$"
+	ARRAY		DW	100 dup ('$$')	       ; array to hold read in values
+	ARRHEADER   DB  "The array contains:", 0Ah, 0Dh, "$"
+	NEWLINE     DB  0Ah, 0Dh, "$"
+	MIN         DW  2 dup ('$$')
+	MINRESULT   DB  "The minimum value in the array is: ", "$"
+	
+
+DATA_SEG ENDS 
+;**********************************************************
+CODE_SEG SEGMENT 'CODE'  
+ASSUME CS:CODE_SEG, DS:DATA_SEG, SS:STACK_SEG, ES:DATA_SEG
+;**********************************************************
+MAIN PROC FAR 
+	
+    PUSH DS
+    MOV AX,DATA_SEG 		    ;set the data segment location
+    MOV DS,AX
+	MOV ES,AX
+	MOV AX,STACK_SEG 		    ;set the stack segment location
+	MOV SS,AX
+	
+	
+	CALL OPENFILE			                
+
+	
+	CALL FILLARRAY
+	
+	
+	CALL PRINTARRAY
+	
+
+	CALL MINIMUM			                
+				                
+    	
+	MOV AX, 4C01h		        ; end program with error level = 1
+	INT 21h	
+	
+
+
+MAIN    ENDP  
+
+
+
+
+;**********************************************************
+;This procedure opens the file to be read and saves the
+;the file handle. If an error occurs, it is displayed to 
+;the user and the program is terminated. 
+;**********************************************************
+OPENFILE    PROC NEAR
+
+    CLC			                ; clear carry flag for testing
+	LEA DX, FILE		        ; address of file to dx
+	MOV AL, 0		            ; read only file restriction to al
+	MOV AH, 3Dh		            ; open file int 21 vector
+	INT 21h			            ; call interrupt
+	JC OpenError		        ; carry flag not set, success
+	MOV HANDLE, AX              ; save file handle for later
+	
+	RET
+	
+OpenError:
+	LEA DX, OPENERR		        ; display success
+	MOV AH, 09h
+	INT 21h
+	MOV AX, 4C01h		        ; end program with error level = 1
+	INT 21
+
+	
+OPENFILE ENDP
+
+
+;**********************************************************
+;This procedure reads the file 3 bytes at a time, stores
+;the content in a buffer in memory, then parses out the
+;actual number without the leading zero and stores the
+;result into the word array leaving an open word in between 
+;each number that was initialized with the string terminator
+;for later printing. When EOF is reached, the file file
+;is closed and control is returned to main. If a read error
+;occurs, it is displayed to the user and the program is
+;terminated 
+;**********************************************************
+FILLARRAY   PROC NEAR
+    
+    XOR SI, SI                  ; zero out SI				             
+	  
+Read:	  
+	CLC			                ; clear carry flag for testing
+	LEA DX, BUF		            ; address of BUF to dx to hold read in value
+	MOV BX, HANDLE		        ; file HANDLE to bx
+	MOV CX, 03h		            ; 3 to CX, number of bytes to read
+	MOV AH, 3Fh		            ; read from file int 21 vector
+	INT 21h
+	                                
+	JC ErrorRead		        ; carry flag was set, error
+	
+	MOV BX, WORD PTR BUF+1               ; number (minus leading zero) to bx
+	MOV ARRAY[SI], BX           ; bx to array at index si
+	
+                                ; move file pointer past space to next value
+    CLC			                ; clear carry flag for testing
+	LEA DX, BUF		            ; address of BUF to dx to hold read in value
+	MOV BX, HANDLE		        ; file HANDLE to bx
+	MOV CX, 1h		            ; 1 to CX, number of bytes to read
+	MOV AH, 3Fh		            ; read from file int 21 vector
+	INT 21h
+	CMP AX, 0000h               ; ax = 0 if at EOF
+	JE  CloseFile                 ; stop reading if ax = 0
+	ADD SI, 04h                 ; increment si by double word
+	JMP Read
+	
+	                                
+	                  
+CloseFile:	                            
+	MOV AH, 3Eh		            ; close file int 21 vector
+	INT 21h                     ; call interrupt
+	         
+	
+	LEA DX, ARRHEADER           ; print array header
+	MOV AH, 09h
+	INT 21h    
+
+    RET
+    
+ErrorRead:
+	LEA DX, READERROR	        ; display error
+	MOV AH, 09h
+	INT 21h
+	MOV AX, 4C01h		        ; end program with error level = 1
+	INT 21h
+	
+	
+FILLARRAY   ENDP
+
+
+;**********************************************************
+;This procedure prints the contents of the array by using
+;a counter to compute the index of each array element and
+;comparing that counter to the counter used in the 
+;FILLARRAY procedure.
+;**********************************************************
+PRINTARRAY  PROC NEAR
+
+
+    XOR DI, DI                  ; clear di for counter
+	         
+Print:                      
+    @print_str  ARRAY[DI]
+    @print_str  NEWLINE
+    ADD DI, 04h                 ; add 4 to di counter
+    CMP DI, SI                  ; compare to si counter
+    JLE Print
+    
+    RET
+    
+PRINTARRAY ENDP
+
+;**********************************************************
+;This procedure traverses the array and finds the minimum
+;value and saves it to memory then informs the user of
+;its result
+;**********************************************************
+MINIMUM   PROC NEAR
+    
+    MOV BX, ARRAY[SI]           ; set initial hex min value           
+    SUB SI, 04h                 ; decrement si counter
+    MOV CX, BX                  ; bx to ax
+    CALL TODECIMAL              ; convert initial min to decimal
+    XOR BX, BX                  ; clear bx register
+    MOV BL, AL                  ; set initial dec min value
+    
+FindMin:
+    TEST SI, SI
+    JS  Result    
+    MOV CX, ARRAY[SI]           ; array value to ax
+    CALL TODECIMAL              ; convert to dec for compare
+    CMP AX, BX                  ; compare values
+    JL  Update
+    SUB SI, 04h
+    JMP FindMin
+    
+    
+Update:
+    MOV MIN, CX
+    MOV BX, AX                  ; dec ax to bx for next compare
+    SUB SI, 04h                 ; decrement array index
+    JMP FindMin
+    
+    
+Result:
+    @print_str  NEWLINE
+    @print_str  MINRESULT
+    @print_str  MIN
+    
+    RET
+    
+MINIMUM ENDP
+
+
+;**********************************************************
+;This procedure takes the hex value in AX, converts it to 
+;decimal, then places it back in AX for comparison
+;**********************************************************
+TODECIMAL   PROC NEAR
+    
+    PUSH CX                     ; save cx to stack
+    MOV DL, CH                  ; ones position to dl
+    SUB DL, 30h                 ; get decimal value
+    MOV DH, CL                  ; tens position to dh
+    SUB DH, 30h                 ; get decimal value
+    
+    MOV AL, DH                  ; operand 1 to al for mul
+    MOV CH, 10h
+    MUL CH                      ; multiply by 10
+    ADD DL, AL                  ; get true decimal value
+    
+    XOR AX, AX                  ; clear ax register
+    MOV AL, DL
+    
+    POP CX                      ; return hex value to cx    
+    
+    RET
+        
+TODECIMAL ENDP
+    
+CODE_SEG ENDS
+
+END MAIN                       

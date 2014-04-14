@@ -1,0 +1,268 @@
+Enter your name: Joe
+
+The year is 2077!
+
+Starting Console
+
+Hacker Joe with health of 100 with 20000 yen 
+
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 1
+You need to get a job first!
+
+Hacker Joe with health of 100 with 20000 yen 
+
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 2
+Hacker Joe with health of 100 with 20000 yen 
+ 
+Welcome to the Black Mart
+PN:1 [BASHER tool named Crusher with 2 strength and a cost of 1000]
+PN:2 [DECRYPTOR tool named LockPiker with 2 strength and a cost of 1000]
+PN:3 [DECRYPTOR tool named JohnTheRipper with 3 strength and a cost of 1500]
+PN:4 [DECRYPTOR tool named Crypsis with 10 strength and a cost of 6000]
+PN:5 [DECRYPTOR tool named Yellowpipe with 15 strength and a cost of 12000]
+PN:6 [BASHER tool named 007 with 10 strength and a cost of 5000]
+PN:7 [DECRYPTOR tool named Reaper with 3 strength and a cost of 3000]
+PN:8 [BASHER tool named Exploit1337 with 6 strength and a cost of 8000]
+To cancel purchase enter -1
+Selection: -1
+No tool bought
+
+Hacker Joe with health of 100 with 20000 yen 
+
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 3
+Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 1
+ [Contact Otto Arnold]  	Corporation: Weyland industries
+1)Job: 101.789.456.223 worth 23803
+2)Job: 314.678.345.101 worth 26253
+3)Job: 314.678.345.101 worth 32564
+4)Job: 123.456.789.100 worth 27464
+5)Job: 100.789.456.123 worth 21024
+6)Job: 100.799.456.223 worth 21607
+7)Job: 999.666.666.777 worth 33788
+8)Job: 999.666.666.777 worth 24193
+9)Job: 123.456.789.100 worth 30186
+10)Job: 100.786.457.143 worth 29862
+Selection: 3
+Job added successfully!
+
+Hacker Joe with health of 100 with 20000 yen 
+
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 1
+
+Jobs to do
+1)Job: 314.678.345.101 worth 32564
+Selection: 1
+
+1) BASHER tool named Crusher with 1 strength and a cost of 0
+2) DECRYPTOR tool named LockPiker with 1 strength and a cost of 0
+Pick your ice breaker: 2
+ 
+ICE ENCOUNTERED, ATTEMPTING BREAK IN.....
+SERVER INFO: UNENCRYPTED server with address of 314.678.345.101 with 2 strength
+RUN FAILURE
+ 
+Hacker Joe with health of 70 with 20000 yen 
+
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 2
+Hacker Joe with health of 70 with 20000 yen 
+ 
+Welcome to the Black Mart
+PN:1 [BASHER tool named Crusher with 2 strength and a cost of 1000]
+PN:2 [DECRYPTOR tool named LockPiker with 2 strength and a cost of 1000]
+PN:3 [DECRYPTOR tool named JohnTheRipper with 3 strength and a cost of 1500]
+PN:4 [DECRYPTOR tool named Crypsis with 10 strength and a cost of 6000]
+PN:5 [DECRYPTOR tool named Yellowpipe with 15 strength and a cost of 12000]
+PN:6 [BASHER tool named 007 with 10 strength and a cost of 5000]
+PN:7 [DECRYPTOR tool named Reaper with 3 strength and a cost of 3000]
+PN:8 [BASHER tool named Exploit1337 with 6 strength and a cost of 8000]
+To cancel purchase enter -1
+Selection: 5
+
+Hacker Joe with health of 70 with 8000 yen 
+
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 2
+Hacker Joe with health of 70 with 8000 yen 
+ 
+Welcome to the Black Mart
+PN:1 [BASHER tool named Crusher with 2 strength and a cost of 1000]
+PN:2 [DECRYPTOR tool named LockPiker with 2 strength and a cost of 1000]
+PN:3 [DECRYPTOR tool named JohnTheRipper with 3 strength and a cost of 1500]
+PN:4 [DECRYPTOR tool named Crypsis with 10 strength and a cost of 6000]
+PN:5 [DECRYPTOR tool named Yellowpipe with 15 strength and a cost of 12000]
+PN:6 [BASHER tool named 007 with 10 strength and a cost of 5000]
+PN:7 [DECRYPTOR tool named Reaper with 3 strength and a cost of 3000]
+PN:8 [BASHER tool named Exploit1337 with 6 strength and a cost of 8000]
+To cancel purchase enter -1
+Selection: 6
+
+Hacker Joe with health of 70 with 3000 yen 
+
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 3
+Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 11
+Invalid choice, try again: 3
+ [Contact Arthur James]  	Corporation: Haas-Bioroid
+1)Job: 123.456.789.100 worth 30682
+2)Job: 123.456.789.100 worth 29972
+3)Job: 123.456.789.100 worth 27725
+4)Job: 101.789.456.223 worth 23957
+5)Job: 101.789.456.223 worth 25105
+6)Job: 100.799.456.223 worth 24163
+7)Job: 100.786.457.143 worth 33807
+8)Job: 314.678.345.101 worth 33110
+9)Job: 100.789.456.123 worth 32371
+10)Job: 100.786.457.143 worth 32935
+Selection: 67
+Invalid choice, try again: 5
+Job added successfully!
+
+Hacker Joe with health of 70 with 3000 yen 
+
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 3
+Pick a contact to view offers
+1)  [Contact Otto Arnold]  	Corporation: Weyland industries
+2)  [Contact Akemi Soul]  	Corporation: Jinteki
+3)  [Contact Arthur James]  	Corporation: Haas-Bioroid
+4)  [Contact Abbi Jones] 	Non Profit: United Cyber Front
+5)  [Contact Marcus O'Brien] 	Non Profit: Electronic Frontier Foundation
+6)  [Contact Adolf Alberg]  	Corporation: Ultralytics
+7)  [Contact Dario Maximus]  	Corporation: Gurron
+8)  [Contact  Gina Varennikov]  	Corporation: Exxon Mobile
+Selection: 7
+ [Contact Dario Maximus]  	Corporation: Gurron
+1)Job: 100.789.456.123 worth 27829
+2)Job: 999.666.666.777 worth 30859
+3)Job: 100.789.456.123 worth 21256
+4)Job: 999.666.666.777 worth 22316
+5)Job: 567.123.678.114 worth 23457
+6)Job: 567.123.678.114 worth 25106
+7)Job: 314.678.345.101 worth 34806
+8)Job: 100.786.457.143 worth 22849
+9)Job: 567.123.678.114 worth 34788
+10)Job: 567.123.678.114 worth 22379
+Selection: 9
+Job added successfully!
+
+Hacker Joe with health of 70 with 3000 yen 
+
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 1
+
+Jobs to do
+1)Job: 314.678.345.101 worth 32564
+2)Job: 101.789.456.223 worth 25105
+3)Job: 567.123.678.114 worth 34788
+Selection: 1
+
+1) BASHER tool named Crusher with 1 strength and a cost of 0
+2) DECRYPTOR tool named LockPiker with 1 strength and a cost of 0
+3) DECRYPTOR tool named Yellowpipe with 15 strength and a cost of 12000
+4) BASHER tool named 007 with 10 strength and a cost of 5000
+Pick your ice breaker: 2
+ 
+ICE ENCOUNTERED, ATTEMPTING BREAK IN.....
+SERVER INFO: UNENCRYPTED server with address of 314.678.345.101 with 5 strength
+RUN FAILURE
+ 
+Hacker Joe with health of 40 with 3000 yen 
+
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 1
+
+Jobs to do
+1)Job: 314.678.345.101 worth 32564
+2)Job: 101.789.456.223 worth 25105
+3)Job: 567.123.678.114 worth 34788
+Selection: 1
+
+1) BASHER tool named Crusher with 1 strength and a cost of 0
+2) DECRYPTOR tool named LockPiker with 1 strength and a cost of 0
+3) DECRYPTOR tool named Yellowpipe with 15 strength and a cost of 12000
+4) BASHER tool named 007 with 10 strength and a cost of 5000
+Pick your ice breaker: 3
+ 
+ICE ENCOUNTERED, ATTEMPTING BREAK IN.....
+SERVER INFO: UNENCRYPTED server with address of 314.678.345.101 with 8 strength
+RUN FAILURE
+ 
+Hacker Joe with health of 10 with 3000 yen 
+
+1) Run on the Grid
+2) Visit the Black Market
+3) Add a Job to the list
+4) Log Off Console
+Selection: 1
+
+Jobs to do
+1)Job: 314.678.345.101 worth 32564
+2)Job: 101.789.456.223 worth 25105
+3)Job: 567.123.678.114 worth 34788
+Selection: 1
+
+1) BASHER tool named Crusher with 1 strength and a cost of 0
+2) DECRYPTOR tool named LockPiker with 1 strength and a cost of 0
+3) DECRYPTOR tool named Yellowpipe with 15 strength and a cost of 12000
+4) BASHER tool named 007 with 10 strength and a cost of 5000
+Pick your ice breaker: 4
+ 
+ICE ENCOUNTERED, ATTEMPTING BREAK IN.....
+SERVER INFO: UNENCRYPTED server with address of 314.678.345.101 with 11 strength
+RUN FAILURE
+ 
+Hacker Joe with health of 0 with 3000 yen  has FLATLINED
+Game over!

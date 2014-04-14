@@ -1,0 +1,195 @@
+include dos.mac
+;**********************************************************
+STACK_SEG SEGMENT STACK
+	DB 100h DUP(?)
+STACK_SEG ENDS
+;**********************************************************
+DATA_SEG SEGMENT 'DATA'
+
+	LIST	DB	100h DUP(?)
+
+	MENU	DB	0AH, 0DH,  0AH, 0DH,'Would you like to:'
+			DB	0AH, 0DH, 'a. Play the game?'
+			DB	0AH, 0DH, 'b. See the high scores?'
+			DB	0AH, 0DH, 'c. Access options menu?'
+			DB	0AH, 0DH, 'd. Exit the program?', 0AH, 0DH, '$'
+
+	RPNSEA	DB	0AH, 0DH, "Haven't made the game yet.", 0AH, 0DH, '$'
+
+	RPNSEC	DB	0AH, 0DH, 0AH, 0DH, 'Do you want to:'
+			DB	0AH, 0DH, '1. Edit high scores?'
+			DB	0AH, 0DH, '2. Change color scheme?'
+			DB	0AH, 0DH, '3. Exit submenu?', 0AH, 0DH, '$'
+
+	RPNSE1	DB	0AH, 0DH, 'Enter a name:', 0AH, 0DH, '$'
+
+	FNAME	DB	10h,?,10h DUP(?)
+
+	RPNSEE	DB	0AH, 0DH, 'The high score list is empty', 0AH, 0DH, '$'
+
+	RPNSEZ	DB	0AH, 0DH, 'Invalid Input', 0AH, 0DH, '$'
+
+	INCHAR	DB	?
+
+	TOPL	DW	?
+
+	LAST	DW	?
+
+	NL		DB	0AH, 0DH, '$'
+
+DATA_SEG ENDS 
+;**********************************************************
+CODE_SEG SEGMENT 'CODE'  
+ASSUME CS:CODE_SEG, DS:DATA_SEG, SS:STACK_SEG, ES:DATA_SEG
+;**********************************************************
+MAIN PROC FAR 
+	
+	PUSH DS
+    	MOV AX,DATA_SEG 		;set the data segment location
+    	MOV DS,AX
+	MOV ES,AX
+	MOV AX,STACK_SEG 		;set the stack segment location
+	MOV SS,AX
+
+	CALL INITLIST			;initialize the empty list
+
+TOP:	@print_str MENU			;output the main menu
+	@read_char			;get user character for menu choice
+			
+	CMP AL,'A'			
+	JB BADL				; if below A on ascii table, must be invalid
+	JE IN_A				; if equal to A
+	CMP AL,'D'	
+	JA LC				; if above D on ascii table, begin cmp of lower case
+	JE EXIT				; if equal to D, exit
+	CMP AL,'B'
+	JE IN_B				; if equal to B
+	CALL MENUC			; otherwise must be C
+	JMP TOP				; repeat MENU
+
+LC:	CMP AL,'a'			
+	JB BADL				; if below a on ascii table, must be invalid
+	JE IN_A				; if equal to a
+	CMP AL,'d'
+	JA BADL				; if above d on ascii table, must be invalid
+	JE EXIT				; if equal to d, exit
+	CMP AL,'b'
+	JE IN_B				; if equal to b
+	CALL MENUC			; otherwise must be c
+	JMP TOP				; repeat MENU
+
+BADL:	@print_str RPNSEZ		; print invalid input
+	JMP TOP				; repeat menu
+
+IN_A:	@print_str RPNSEA		; play the game (at this point game isn't made)
+	JMP TOP				; repeat MENU
+
+IN_B:	CALL DISPL			;call proc to display list
+	JMP TOP				; repeat MENU
+	
+EXIT:	.exit				;return to DOS
+
+MAIN    ENDP
+
+;**********************************************************
+;This procedure handles the sub-menu for option c)
+;of the main menu
+;**********************************************************
+MENUC PROC NEAR
+
+BACK:	@print_str RPNSEC		; print submenu
+	@read_char			; get user input
+	
+	CMP AL,'1'			
+	JB BAD				; if below 1, invalid input
+	JE IN_1				; if equal to 1
+	
+	CMP AL,'3'			
+	JA BAD				; if above 3, invalid input
+	JE GETOUT			; if equal to 3, exit submenu
+	
+	@print_str RPNSEA		; otherwise must be 2, change color scheme (at this point game hasn't been made yet)
+	JMP BACK			; repeat submenu c
+
+BAD:	@print_str RPNSEZ		; print invalid input
+	JMP BACK			; repeat submenu c
+
+IN_1:	CALL ADDITEM			;call proc to add a name to list
+	JMP BACK
+	
+GETOUT:	RET				; return to main
+
+MENUC ENDP
+
+;**********************************************************
+;This procedure initializes the linked list 
+;**********************************************************
+INITLIST PROC NEAR
+	
+	MOV BYTE PTR SI, OFFSET LIST	; byte sized move of LIST address into SI
+	MOV TOPL, SI			; copy/save LIST address from SI to memory at TOPL
+	MOV BX, SI			; copy LIST address from SI to BX
+	MOV [SI+2], BX			; copy LIST address from BX to memory at next iteration of linked list
+	ADD BX, 4			; add 4 to BX
+	MOV [SI], BX			; save BX to memory at original SI address
+	MOV LAST, BX			; save BX in last iteration of LIST
+
+	RET				; return to main
+
+INITLIST ENDP
+
+;**********************************************************
+;This procedure outputs each data element of the linked list
+;**********************************************************
+DISPL	PROC NEAR
+	
+	MOV BX, WORD PTR LIST+2		; move second iteration of LIST into BX
+	MOV DI, TOPL			; move beginning of LIST into DI
+	MOV AX, TOPL			; move beginning of LIST into AX
+	CMP BX, AX			; compare beginning and second ierations of LIST for content
+	JNE PRINT			; if not empty, print list
+	
+EMPTY:  @print_str RPNSEE		; AX = BX and list is empty, prompt user
+	JMP FIN				; return to main
+
+PRINT:	MOV BX, [DI]			; move beginning address to BX for printing
+	@print_str NL			; print newline
+	@print_str [BX]			; print contents of LIST iteration
+	MOV AX, TOPL			; move top of LIST ptr to AX for comparison
+	SUB BX, 2			; subtract 2 from BX to get next iteration
+	MOV DI, BX			; save next iteration at DI
+	CMP [BX], AX			; compare top of LIST ptr to current iteration ptr
+	JNE PRINT			; continue printing unless AX = BX
+
+FIN:	RET				; return to main
+
+DISPL ENDP
+
+;**********************************************************
+;This procedure adds an element to the list
+;**********************************************************
+ADDITEM PROC NEAR
+	
+	@print_str NL			; print newline
+	@print_str RPNSE1		; prompt to enter name
+	@read_str FNAME			; read in first name and store at FNAME in memory
+	MOV SI, OFFSET FNAME+2		; move address of FNAME+2 into SI
+	MOV DI, LAST			; move address of LAST into DI
+	MOV CX, 0000h			; clear CX register
+	MOV CL, FNAME+1			; move FNAME+1 into CL
+	CLD				; clear direction flag
+	REP MOVSB			; repeat, move byte at address DS:SI to address ES:DI
+	MOV AX, TOPL			; move top of LIST address to AX
+	MOV BYTE PTR [DI], '$'		; move end of line character to the memory at address DI
+	INC DI				; increment DI
+	MOV [DI], AX			; move top of LIST address in AX to memory at address DI
+	add DI, 02h			; move 02h into DI register
+	MOV BX, LAST			; move LAST address from memory into BX
+	MOV [BX-2], DI			; move DI into memory at address DS:BX-2
+	MOV LAST, DI			; move address DI into memory at LAST
+
+	RET				; return to main
+ADDITEM ENDP
+
+CODE_SEG ENDS
+END MAIN

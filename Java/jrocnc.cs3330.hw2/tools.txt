@@ -1,0 +1,2 @@
+Crusher,BASHER,0,1
+LockPicker,DECRYPTOR,0,1

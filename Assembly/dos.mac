@@ -1,0 +1,27 @@
+;dos macro file definitions
+
+@print_str	MACRO TXT
+	LEA DX,TXT
+	MOV AH,09
+	INT 21H
+ENDM
+
+@print_char MACRO CHAR
+	MOV DL,CHAR
+	MOV AH,02
+	INT 21H
+ENDM
+	
+@read_str MACRO MSG
+	LEA DX,MSG
+     	MOV AH,0AH 
+     	INT 21H 
+ENDM
+
+@read_char MACRO
+	MOV AH,01
+	INT 21H
+ENDM
+
+
+	
